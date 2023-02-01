@@ -1,0 +1,2 @@
+value of x, y, z are 13 7 10 respectively.
+because x has value 13 initially in array and other values are given afterwards.
