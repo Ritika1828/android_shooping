@@ -1,0 +1,18 @@
+var arr=[
+    {name:"ritika", age:20},
+    {name:"radhika", age:23},
+    {name:"ujjwal", age:21},
+    {name:"arpan", age:22}
+];
+function f1(arr){
+    let ans=[];
+    for(var ele of arr){
+        if (ele.age%2==0){
+            ans.push(ele);
+        }
+    }
+    return ans
+};
+
+var output=f1(arr);
+console.log(output)

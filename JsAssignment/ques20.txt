@@ -1,0 +1,6 @@
+0 || 1 = 1  because 0 is false it will check other that is true so it will return 1
+1 || 2 = 1  because 1 is true and 2 is true and will return true that is 1
+0 && 1 = 0  because 0 is false and it will not check other condition and will return 0
+1 && 2 = 2  because 1 is true as & is used it will check other condition and will return 2
+
+

@@ -1,0 +1,26 @@
+const arr = [1,2,3,4];
+console.log(arr.hasOwnProperty(3));   
+console.log(arr.hasOwnProperty(4));
+
+O/P: 
+True
+False
+
+const obj = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+console.log(Object.keys(obj));
+
+O/P: [1,2,3]
+
+const object1 = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+
+console.log(Object.values(obj));
+
+O/P: [a,b,c]

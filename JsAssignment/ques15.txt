@@ -1,0 +1,4 @@
+undefined
+{name: 'Sam', age: 20}
+Emily
+{name: 'Karl', age: 21}

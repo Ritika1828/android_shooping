@@ -1,0 +1,10 @@
+var sec=1;
+function print(){
+  console.log("print" +sec);
+  sec++;
+  if(sec==11){
+  clearInterval(id);
+  }
+}
+
+const id =setInterval(print,1000);

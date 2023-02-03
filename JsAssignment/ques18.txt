@@ -1,0 +1,4 @@
+a called
+error
+because when we declare var a=34 then it converts into a variable and is no more a function so it will throw a error
+

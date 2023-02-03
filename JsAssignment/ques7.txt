@@ -1,0 +1,5 @@
+answer is
+False
+False
+True
+because if Nan is copared with itself it gives false.

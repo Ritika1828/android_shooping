@@ -1,0 +1,6 @@
+answer is:
+True because a is not assigned any value
+False because a is not null it is undefined
+NaN because multiplying undefined number is NaN
+undefined is the value of a 
+

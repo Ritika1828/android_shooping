@@ -1,0 +1,4 @@
+a="Danny is dancing"
+var a=(a.split("").sort((a, b)=>a.localeCompare(b)).join("").trim())
+console.log(a)
+

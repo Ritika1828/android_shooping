@@ -1,0 +1,7 @@
+answer will be 
+False
+False
+True
+True
+ because if will do a==b it will check the reference and will try to change the reference but the location of a and b are different and can't be changed so it is false.
+now we have assigned a to c then it will return true because both has same reference. 

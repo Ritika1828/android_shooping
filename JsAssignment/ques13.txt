@@ -1,0 +1,16 @@
+Regex in javascript is used for pattern finding.
+
+function reg(name){
+
+var regx=/^[0-9a-zA-Z]+$/;
+if(name.match(regx))
+{
+return true;
+}
+else{
+return false;
+}
+}
+let name="Ritika2807";
+console.log(reg(name));
+

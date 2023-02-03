@@ -1,0 +1,26 @@
+var x = prompt("enter string ");
+if(x.match(/^\d+\+\d+$/)){
+    var arr=x.split("+");
+    var [a,b]=arr;
+    console.log(Number(a)+Number(b));
+}
+else if(x.match(/^\d+\-\d+$/)){
+    var arr=x.split("-");
+    var [a,b]=arr;
+    console.log(Number(a)-Number(b));
+}
+else if(x.match(/^\d+\*\d+$/)){
+    var arr=x.split("*");
+    var [a,b]=arr;
+    console.log(Number(a)*Number(b));
+}
+else if(x.match(/^\d+\/\d+$/)){
+    var arr=x.split("/");
+    var [a,b]=arr;
+    console.log(Number(a)/Number(b));
+}
+else{
+    console.log("invalid ");
+}
+
+

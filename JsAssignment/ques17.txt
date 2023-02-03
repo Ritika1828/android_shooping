@@ -1,0 +1,25 @@
+let ob=[
+    {name:"ritika", age:20},
+    {name:"arpan", age:23},
+    {name:"radhika", age:20},
+    {name:"ujjwal", age:20}
+];
+let output=[];
+let ll=[];
+let ans=[];
+for(var ele of ob){
+    if (ll[ele.name]!=1){
+        ll[ele.name]=1;
+        output.push(ele);
+    }
+    else{
+    ll[ele.name]+=1;
+    }
+};
+for(var ele of output){
+    if(ll[ele.name]===1){
+        ans.push(ele);
+    }
+}
+console.log(ans)
+

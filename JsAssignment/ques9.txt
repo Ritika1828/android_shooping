@@ -1,0 +1,6 @@
+answer is:
+2
+4
+3
+1
+because first function has time 2000 and it will move next step and will print 2 after this another function has time 0 it will not work and will move to next step and will print 4 after all this time function will come in a queue and work and will print 3 and 1.

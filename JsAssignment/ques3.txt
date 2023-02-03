@@ -1,0 +1,2 @@
+value of x is 1 and value of y is an array [2,3,4] which has 3 elements .
+because [x,...y]=[1,2,3,4] means accoprding to destructuring x will be 1 and ...y means remaining values will come in y in the form of array.

@@ -1,0 +1,56 @@
+const s="Hello World"
+console.log(s.toUpperCase())
+O/P:  HELLO WORLD
+  
+const s="Hello World"
+console.log(s.toLowerCase())
+O/P:  hello world
+
+const s="Hello World"
+console.log(s.includes('o'))
+O/P: true
+
+const s="Hello World"
+console.log(s.concat('e'))
+O/P: Hello Worlde
+
+const s="Hello World"
+console.log(s.indexOf('o'))
+O/P: 4
+
+const s="Hello World"
+console.log(s.endsWith('r'))
+O/P: false
+
+const s="Hello World"
+console.log(s.startsWith('r'))
+O/P: false
+
+const s="Hello World World"
+console.log(s.replace('World','Ritika'))
+O/P: Hello Ritika World
+
+const s="Hello World World"
+console.log(s.replaceAll('World','Ritika'))
+O/P: Hello Ritika Ritika
+
+const s="Hello World"
+console.log(s.substring(2,6))
+O/P: llo
+
+const s="      Hello World"
+console.log(s.trim())
+O/P:Hello World
+
+const s="Hello World"
+console.log(s.slice(2,7))
+O/P: llo W
+
+const s="Hello World"
+console.log(s.split(" "))
+O/P: [ 'Hello', 'World' ]
+
+const s="Ban"
+const p="Back"
+console.log(s.localeCompare(p))
+O/P: 1

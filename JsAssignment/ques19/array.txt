@@ -1,0 +1,57 @@
+arr=[1,2,3]
+arr.push(3);
+console.log(arr)
+
+O/P: [1,2,3,3]
+
+arr=[1,2,3]
+arr.pop(2);
+console.log(arr)
+
+O/P: [1,2,]
+
+arr=[1,2,3]
+arr.shift();
+console.log(arr)
+
+O/P: [2,3]
+
+arr=[1,2,3]
+arr.unshift(2);
+console.log(arr)
+
+O/P: [2,1,2,3]
+
+const numbers = [4, 9, 16, 25];
+const newArr = numbers.map(Math.sqrt)
+
+O/P;: [2,3,4,5]
+
+const ages = [32, 33, 16, 40];
+const result = ages.filter(check);
+
+function check(age) {
+  return age >= 18;
+}
+
+O/P: 32,33,40
+
+const arr = [1,2,3,4];
+console.log(arr.splice(2));
+
+O/P:[3,4]
+
+const arr = [1,2,3,4];
+console.log(arr.slice(3));
+
+O/P: [4]
+
+const arr = [3,4,1,2];
+console.log(arr.sort());
+
+O/P: [1,2,3,4]
+
+const arr = [1,2,3,4];
+console.log(arr.join(""));
+
+O/P: 1234

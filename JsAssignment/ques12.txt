@@ -1,0 +1,3 @@
+if we will print the object it will print 
+{first:50, second:30}
+first will not be 10 because value of first is overidden by second.

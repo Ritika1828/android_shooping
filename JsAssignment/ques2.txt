@@ -1,0 +1,2 @@
+value of x and y are 3 and 7 respectively
+because of destructuring value of x is 3 and then after empty space there is y so value of y becomes 7.
