@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-size{
+    height: 60px;
+    width: 60px;
+  }
+  
+  .card{
+    border-radius: 25px;
+    border:2px solid black;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height:200px
+  }
+  
+  .data{
+    padding: 30px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+  
+  .button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
