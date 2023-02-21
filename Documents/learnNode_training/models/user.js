@@ -57,18 +57,16 @@ async function getUserById(userid){
 
 
 
-function createTime(email){
-  var TimeStamp = new Date().getTime()
-  return knex("users").insert({TimeStamp,email}).returning("*");
+function createuserlogin(email){
+  var time = new Date().getTime()
+  return db("login_time").insert({time,email}).returning("*");
 }
-function LoginCheck(email){
-  var TimeStamp = new Date().getTime()
-  TimeStamp=TimeStamp-1*60*1000
-  return  knex.raw("select email from userlogin where email=? and time>=?",[email,TimeStamp])
+function userlogin(email){
+  var time = new Date().getTime()
+  time=time-60000
+  return  db.raw("select email from login_time where email=? and time>=?",[email,time])
 }
-   
 
 
 
-
-module.exports = { getUserByEmail, createUser, authUser, getPassword , getUserById,createTime,LoginCheck};
+module.exports = { getUserByEmail, createUser, authUser, getPassword , getUserById,createuserlogin,userlogin};

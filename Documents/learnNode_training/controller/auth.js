@@ -1,6 +1,6 @@
 
 const {validateEmail,validateName,validatePassword} =require('../helpers/validation')
-const {getUserByEmail, createUser, authUser , getPassword, LoginCheck}=require('../models/user');
+const {getUserByEmail, createUser, authUser , getPassword, userlogin, createuserlogin}=require('../models/user');
 const crypto=require('crypto');
 const JWT=require('jsonwebtoken')
 
@@ -40,7 +40,7 @@ async function registration(req, res) {
               return res.status(200).send({
                 status:200,
                 message:`${username} is registered successfully`
-                          })
+                })
             });
           })
           .catch((error) => {
@@ -60,6 +60,18 @@ async function login(req, res) {
       message: "Incorrect email",
     });
   }
+
+  createuserlogin(email)
+    .then(() => {
+      userlogin(email)
+        .then((data)=> {
+          let x = data.rows;
+          if (x.length > 3) {
+            return res.send("Limit exeed")
+          }
+        })
+      })
+  
     
   getUserByEmail(email).then((data) => {
     const passwordHash = crypto
@@ -84,12 +96,7 @@ async function login(req, res) {
   });
   
 }
-LoginCheck(email)
-  .then((data) => {
-    let x = data.rows
-    if (x.length > 3) {
-      return res.send("Maximum Limit Exeed")
-    }
+
   
 
   
@@ -104,7 +111,7 @@ LoginCheck(email)
 
     module.exports = {
       registration,
-      login, LoginCheck
+      login
     }
 
   
