@@ -1,0 +1,23 @@
+.img{
+    height: 50vmin;
+    width: 50vmin;
+    border-radius: 20px;
+}
+
+.heading{
+    color: #1B4332;
+}
+
+.para{
+    color: black;
+    font-size: x-large;
+}
+
+.button{
+    height: 7vmin;
+    width: 20vmin;
+    background-color: #40916C;
+    color: white;
+    font-size: x-large;
+    font-family:  sans-serif;
+}
