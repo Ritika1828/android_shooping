@@ -1,6 +1,7 @@
-body {
+.main {
     background-color: #B7E4C7;
-    min-height: 70vh;
+    /* min-height: 70vh; */
+    height: 100vh;
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
@@ -33,12 +34,12 @@ body {
     margin-bottom: 1rem;
   }
 
-  .heading img{
+  .img{
     height: 20vmin;
     width: 20vmin;
     background: transparent;
   }
-  .heading h1 {
+  .head {
     color: #1B4332;
     padding: 0.2rem 1.2rem;
     border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
@@ -46,7 +47,7 @@ body {
     font-size: 1.5rem;
   }
   
-  .form input {
+  .input {
     box-sizing: border-box;
     background-color: transparent;
     padding: 0.7rem;
@@ -62,7 +63,7 @@ body {
     margin-right: 10px;
   }
   
-  button {
+  .button {
     padding: 0;
     border: none;
     font-family: "Architects Daughter", cursive;
@@ -71,7 +72,7 @@ body {
     border-radius: 5px;
     
   }
-  button span {
+  .search {
     background: #B7E4C7;
     display: block;
     padding: 0.5rem 1rem;
@@ -81,7 +82,7 @@ body {
     width: 300px;
   }
   
-  li {
+  .listitem {
     text-align: left;
     position: relative;
     display: flex;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ToDoItem from "./setTodoItem";
-import './styles/calorie.css'
+import styles from './styles/calorie.module.css'
 import calorie from  '../images/calorie.png'
 import img from '../images/img.png'
 
@@ -38,19 +38,20 @@ function Calorie() {
         setCounter(cal+counter)
     }
 
-  return (
-    <div className="container">
-      <div className="heading">
-              <h1>What did you eat today?</h1>
+    return (
+        <div className={styles.main}>
+        <div className={styles.container}>
+        < div className = { styles.heading } >
+              <h1 className={styles.head}>What did you eat today?</h1>
 
-              <img src={calorie}/>
+              <img className={styles.img} src={calorie}/>
               
           </div>
           <h1 >Total Calories={counter} cal </h1>
-      <div className="form">
-        <input type="text" value={input} placeholder="Enter Food" onChange={handleChange} />
-        <button  onClick={ () => { addItem(); handleCount();} }>
-          <span>Search</span>
+            <div className={styles.form}>
+        <input className={styles.input} type="text" value={input} placeholder="Enter Food" onChange={handleChange} />
+        <button className={styles.button} onClick={ () => { addItem(); handleCount();} }>
+          <span className={styles.search}>Search</span>
         </button>
       </div>
       <div>
@@ -59,7 +60,7 @@ function Calorie() {
                       return (
                           
                           <div id={index}>
-                              <li>
+                              <li className={styles.listitem}>
                                   <span>{todoItem}</span>
                                   <span>{cal} cal</span>
                                   </li>
@@ -71,7 +72,8 @@ function Calorie() {
                   
         </ul>
       </div>
-    </div>
+            </div>
+            </div>
   );
 }
 
