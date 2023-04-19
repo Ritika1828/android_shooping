@@ -1,0 +1,17 @@
+query webGetMyInfo {
+   me{
+    id
+    name
+    picture
+     stats{
+        posts
+        followers
+        following
+      }
+    primaryExamCategory{
+      id
+      name
+     
+    }
+  }
+}
